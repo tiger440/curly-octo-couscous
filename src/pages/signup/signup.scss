@@ -1,0 +1,125 @@
+.formWrp {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    .formBox {
+        padding: 64px;
+        width: 100%;
+        max-width: 480px;
+        overflow: auto;
+
+        input,
+        label {
+            font-size: 14px;
+        }
+
+        .logoBox {
+            margin-bottom: 36px;
+        }
+
+        .formTitleText {
+            margin-bottom: 24px;
+
+            h3 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .forgotPass {
+            margin: 4px 0;
+            text-align: right;
+            display: block;
+            text-decoration: underline;
+            margin-left: auto;
+            font-size: 14px;
+        }
+
+        .loginButton,
+        .signUpBtn {
+            padding: 11px 16px;
+            border-radius: 100px;
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        .signUpBtn {
+            justify-content: center;
+        }
+
+        .signUpBottomText {
+            font-size: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+
+            a {
+                font-size: 12px;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .formImage {
+        margin: 16px;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media (max-width: 768px) {
+        .formImage {
+            padding: 32px;
+            display: none;
+        }
+    }
+    .formBox {
+        padding: 44px;
+        .signUpFieldContainer {
+            // background-color: orange;
+            width: 100%;
+            // flex: 1;
+        }
+        .container {
+            height: 100%;
+            overflow-y: auto;
+            padding-right: 15px;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #8888887c;
+                border-radius: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+        }
+    }
+}

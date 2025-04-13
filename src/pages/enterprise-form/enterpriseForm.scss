@@ -1,0 +1,276 @@
+.AppBar {
+    height: 80px;
+    justify-content: center;
+    padding: 0 21px;
+}
+
+.stepperWrp {
+    position: relative;
+
+    .buttonModel,
+    button {
+        border-radius: 100px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        gap: 8px;
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+
+    .stepperBox {
+        // position: relative;
+        padding: 30px 56px 28px 56px;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .backButton {
+            // position: absolute;
+            // top: 29px;
+            // left: 56px;
+        }
+
+        .stepperList {
+            flex: 1;
+            max-width: 786px;
+            margin: 0 auto;
+        }
+    }
+
+    .stepperContent {
+        position: relative;
+        background-image: url(../../assets/bg.png);
+        // height: calc(100vh - 200px);
+        height: calc(100vh - 200px);
+        margin-top: -16px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .stepperDefaultModel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 24px;
+            // width: 901px;
+            width: 60%;
+            padding: 84px 70px 77px 68px;
+            text-align: center;
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0.75;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            .modelTitleText {
+                margin: 0;
+                margin-bottom: 30px;
+                font-weight: 600;
+                font-size: 40px;
+            }
+
+            .modelSubTitle {
+                margin: 0;
+                margin-bottom: 40px;
+                display: block;
+                font-size: 20px;
+                font-family: "Transducer";
+            }
+
+            button {
+                margin: 0 auto;
+                font-weight: 500;
+
+                span {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .stepperData {
+            overflow-y: scroll;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                // background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                border-radius: 100px;
+                margin-top: 30px;
+                background: #88888800;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #5555553a;
+            }
+
+            margin: 0 56px 30px 56px;
+            border-radius: 24px;
+            height: calc(100vh - 230px);
+
+            >div {
+                justify-content: center;
+            }
+
+            // for stap 4
+            .formSubTitleMain {
+                font-size: 18px;
+            }
+
+            .formDetails,
+            .formSubDetails {
+                font-size: 14px;
+            }
+
+            .formToggleButton {
+                border-radius: 8px;
+                height: 54px;
+            }
+
+            // for stap 4 end
+            .titleTop {
+                padding: 24px 64px 24px 64px;
+
+                h4 {
+                    margin: 0;
+                    margin-bottom: 8px;
+                    font-size: 24px;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+
+            .formBox {
+                // height: calc(100vh - 468px);
+                // overflow: auto;
+                padding: 40px 80px 50px 64px;
+
+                :global(.MuiMenu-paper) {
+                    max-height: 200px;
+                }
+
+                .noteText {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+                .formLabel {
+                    font-size: 18px;
+
+                    .tooltipIcon {
+                        margin-left: 5px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+
+                .customLabel {
+                    font-size: 14px;
+                }
+
+                .docdWrp {
+                    box-sizing: border-box;
+                    display: flex;
+                    gap: 16px;
+
+                    .docCenter {
+                        height: 130px;
+                        flex: 0 1 auto;
+                        margin: 0;
+                    }
+
+                    .uploadFileBox {
+                        padding: 16px;
+                        max-width: 33.33%;
+                        height: 136px;
+                        flex-basis: 33.33%;
+                        flex-grow: 0;
+                        box-shadow: none;
+
+                        .uploadFileTop {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .fileSize {
+                                display: flex;
+                                align-items: flex-end;
+                                gap: 5px;
+
+                                img {
+                                    width: 36px;
+                                    height: 36px;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            .icon {
+                                max-width: 30px;
+                                padding: 5px;
+                                min-width: inherit;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                            display: -webkit-box;
+                            max-width: 200px;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+
+                        .fileName {
+                            word-wrap: break-word;
+                        }
+                    }
+                }
+            }
+
+            .formFooter {
+                button {
+                    margin: 0 auto;
+                    padding: 7px 15px;
+                }
+            }
+        }
+    }
+}

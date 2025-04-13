@@ -1,0 +1,215 @@
+.profilePage {
+    .dashboardWrap {
+        background-image: url(../../assets/dashboard_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+
+        .dashboardData {
+            padding: 0 20px 20px 20px;
+
+            .dashboardPageHeader {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .dashboardTitle {
+                    font-size: 24px;
+                    margin: 0;
+                }
+
+                .dashboardActionButton {
+                    button {
+                        border-radius: 100px;
+                    }
+                }
+            }
+
+            .priceCard {
+                padding: 40px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 280px;
+                    width: 280px;
+                    right: -35px;
+                    z-index: -1;
+                    top: 0;
+                    background-size: contain;
+                    background-image: url(/src/assets/price_card_icon.png);
+                    background-repeat: no-repeat;
+                }
+
+                span {
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 24px;
+                    max-width: 423px;
+                    font-weight: 400;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 8px;
+                }
+
+                .cardButton {
+                    border-radius: 100px;
+                    padding: 7px 15px;
+
+                    span {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .VotreCard {
+                padding: 46px 24px 24px 24px;
+
+                span {
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                    display: block;
+                }
+
+                h5 {
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    margin-bottom: 15px;
+                }
+
+                .cardButton {
+                    border-radius: 100px;
+                    padding: 7px 15px;
+
+                    span {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .entrepriseCard {
+                margin-top: 0;
+                position: relative;
+
+                .cardMenu {
+                    position: absolute;
+                    right: 16px;
+                    top: 10px;
+                }
+
+                .profile {
+                    padding: 24px;
+                    display: flex;
+                    gap: 16px;
+                    flex-direction: column;
+
+                    .profileImage {
+                        div {
+                            background-color: white;
+                        }
+                    }
+
+                    .profileText {
+                        span.cardDate {
+                            font-size: 12px;
+                            display: inline-flex;
+                            gap: 5px;
+                        }
+
+                        h6 {
+                            font-size: 16px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            display: -webkit-box;
+                            max-width: 200px;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                .capitalBox {
+                    padding: 0 24px;
+                    display: flex;
+                    height: 72px;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    button {
+                        font-size: 12px;
+                        padding: 2px 8px;
+                    }
+
+                    p {
+                        text-align: right;
+                        font-size: 12px;
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profileModel {
+    :global([role="dialog"]) {
+        padding: 24px;
+        min-width: 510px;
+    }
+
+    .dialogHeading {
+        h5 {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 14px;
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .dialogContent {
+        .profileBoxList {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 71px;
+            gap: 20px;
+            justify-content: space-between;
+            border-radius: 20px;
+        }
+    }
+
+    .modelButton {
+        button {
+            border-radius: 100px;
+        }
+    }
+}

@@ -1,0 +1,436 @@
+.resultPage {
+  .dashboardWrap {
+    background-image: url(../../assets/dashboard_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .dashboardData {
+      padding: 0 20px 20px 20px;
+
+      .dashboardTitle {
+        font-size: 24px;
+        margin: 0;
+
+        h4 {
+          font-weight: 600;
+        }
+      }
+
+      .dashboardPageHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .dashboardActionButton {
+          button {
+            border-radius: 30px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .priceCard {
+        padding: 65px 133px 65px 40px;
+        position: relative;
+        background-color: #fff;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 336px;
+          width: 350px;
+          right: -57px;
+          z-index: -1;
+          top: 0;
+          background-size: contain;
+          background-image: url(/src/assets/price_card_icon.png);
+          background-repeat: no-repeat;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          right: 35px;
+          z-index: 1;
+          cursor: pointer;
+          bottom: 35px;
+          background-size: contain;
+          background-image: url(../../assets/uploadImage.png);
+          background-repeat: no-repeat;
+        }
+
+        span {
+          font-size: 18px;
+          display: block;
+          margin-bottom: 24px;
+          max-width: 252px;
+          font-weight: 600;
+        }
+
+        h2 {
+          font-size: 64px;
+          margin: 0;
+        }
+
+        .variationText {
+          font-size: 13px;
+        }
+      }
+
+      .VotreCard {
+        padding: 25px 25px;
+
+        h5 {
+          font-size: 20px;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 14px;
+          display: -webkit-box;
+          max-width: 100%;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          font-weight: 300;
+          overflow: hidden;
+        }
+      }
+
+      .downloadPDF {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 15px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 8px;
+
+        .downloadText {
+          font-size: 12px;
+        }
+
+        .downloadButton {
+          padding-inline: 15px;
+          font-weight: 500;
+          background-color: #0374ff33;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .entrepriseCard {
+        margin-top: 20px;
+        position: relative;
+
+        .cardMenu {
+          position: absolute;
+          right: 16px;
+          top: 10px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .profile {
+          padding: 24px;
+          display: flex;
+          gap: 16px;
+
+          .profileImage {}
+
+          .profileText {
+            h6 {
+              font-size: 16px;
+              font-weight: 500;
+            }
+
+            p {
+              font-size: 12px;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .capitalBox {
+          padding: 0 24px;
+          display: flex;
+          height: 72px;
+          align-items: center;
+          justify-content: space-between;
+
+          button {
+            font-size: 12px;
+            padding: 2px 8px;
+            font-weight: 500;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          p {
+            text-align: right;
+            font-size: 12px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .sliderCard {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: black;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          opacity: 0.5;
+        }
+
+        .cardText {
+          position: absolute;
+          bottom: 0;
+          padding: 24px;
+          z-index: 1;
+
+          p {
+            font-size: 12px;
+          }
+
+          h4 {
+            font-size: 20px;
+          }
+
+          span {
+            font-size: 14px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      .GridGroupContainer {
+        margin-top: 25px;
+        margin-inline: 30px;
+
+        .dvdr {
+          padding-top: 25px;
+        }
+
+        &:last-child {
+          .dvdr {
+            display: none;
+          }
+        }
+      }
+
+      .furtherCard {
+        padding: 24px;
+        position: relative;
+        height: 100%;
+
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+
+        .viewMore {
+          margin-top: auto;
+          margin-left: auto;
+          font-weight: 400;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          width: 100%;
+
+          .titleText {
+            // max-width: 56%;
+            // text-overflow: ellipsis;
+            // overflow: hidden;
+            // white-space: nowrap;
+            font-weight: 400;
+            font-size: 16px;
+          }
+
+          .separator {
+            width: 1px;
+            height: 24px;
+            line-height: 24px;
+            background-color: black;
+          }
+
+          .btn {
+            font-size: 13px;
+            line-height: 18px;
+            padding: 3px 8px;
+            border: none;
+            outline: none;
+            font-weight: 500;
+
+            &.oui {
+              background-color: #0373FF;
+            }
+
+            &.enCours {
+              background-color: #FFAB00;
+            }
+
+            &.non {
+              background-color: #f25929;
+            }
+          }
+
+          .positiveDiff {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: #118D57;
+
+            .subTitle {
+              margin: 0;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0px;
+          top: 0;
+          left: 0;
+          height: 100%;
+        }
+
+        &.oui {
+          border: none;
+
+          &:after {
+            width: 10px;
+            background-color: #0373FF;
+          }
+        }
+
+        &.enCours {
+          border: none;
+
+          &:after {
+            width: 10px;
+            background-color: #FFAB00;
+          }
+        }
+
+        &.non {
+          border: none;
+
+          &:after {
+            width: 10px;
+            background-color: #f25929;
+          }
+        }
+
+        h5 {
+          font-size: 16px;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-bottom: 8px;
+        }
+
+        .cardMenu {
+          position: absolute;
+          right: 16px;
+          top: 10px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modelDialog {
+  :global([role="dialog"]) {
+    padding: 24px;
+    min-width: 510px;
+  }
+
+  .dialogHeading {
+    margin-bottom: 16px;
+
+    h5 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 14px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .dialogContent {
+    .forgotPass {
+      a {
+        text-align: right;
+        font-size: 14px;
+        margin-left: auto;
+        display: block;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .modelButton {
+    button {
+      border-radius: 100px;
+    }
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

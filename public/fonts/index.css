@@ -1,0 +1,216 @@
+/* @font-face {
+  font-family: "Transducer";
+  src: url("./Transducer\ Bold.woff2");
+}
+@font-face {
+  font-family: "TransducerBoldItalic";
+  src: url("./Transducer\ Bold\ Italic.woff2");
+}
+@font-face {
+  font-family: "TransducerRegular";
+  src: url("./Transducer\ Extended\ Regular.woff2");
+}
+@font-face {
+  font-family: "TransducerRegularItalic";
+  src: url("./Transducer\ Extended\ Regular\ Italic.woff2");
+}
+@font-face {
+  font-family: "TransducerMedium";
+  src: url("./Transducer\ Extended\ Medium.woff2");
+}
+@font-face {
+  font-family: "TransducerMediumItalic";
+  src: url("./Transducer\ Extended\ Medium\ Italic.woff2");
+}
+@font-face {
+  font-family: "TransducerBlack";
+  src: url("./Transducer\ Black.woff2");
+}
+@font-face {
+  font-family: "TransducerBlackItalic";
+  src: url("./Transducer\ Black\ Italic.woff2");
+} */
+
+@font-face {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Transducer';
+    src: url("./Transducer\ Extended\ Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Transducer";
+    font-weight: 400;
+    font-style: italic;
+    src: url("./Transducer\ Extended\ Regular\ Italic.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Transducer";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./Transducer\ Extended\ Medium.woff2");
+}
+
+@font-face {
+    font-family: "Transducer";
+    font-weight: 500;
+    font-style: italic;
+    src: url("./Transducer\ Extended\ Medium\ Italic.woff2");
+}
+
+@font-face {
+    font-family: "Transducer";
+    font-weight: 700;
+    font-style: normal;
+    src: url("./Transducer\ Bold.woff2");
+}
+
+@font-face {
+    font-family: "Transducer";
+    font-weight: 700;
+    font-style: italic;
+    src: url("./Transducer\ Bold\ Italic.woff2");
+}
+
+@font-face {
+    font-family: "Transducer";
+    font-weight: 900;
+    font-style: normal;
+    src: url("./Transducer\ Black.woff2");
+}
+
+@font-face {
+    font-family: "Transducer";
+    font-weight: 900;
+    font-style: italic;
+    src: url("./Transducer\ Black\ Italic.woff2");
+}
+
+
+/* @font-face {
+    font-family: "Transducer";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Condensed Regular.woff2");
+  } */
+
+/* 
+  @font-face {
+    font-family: "Transducer Condensed";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Condensed Regular Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Condensed";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Condensed Regular.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 900;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Extended Black Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 900;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Extended Black.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 700;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Extended Bold Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 700;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Extended Bold.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 100;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Extended Hairline Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 100;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Extended Hairline.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 500;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Extended Medium Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Extended Medium.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Extended Regular Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer Extended";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Extended Regular.woff2") format("woff2");
+  } */
+/* 
+  @font-face {
+    font-family: "Transducer";
+    font-weight: 100;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Hairline Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer";
+    font-weight: 100;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Hairline.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer";
+    font-weight: 500;
+    font-style: italic;
+    src: url("./AnyConv.com__Transducer Medium Italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Medium.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Transducer";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./AnyConv.com__Transducer Regular.woff2") format("woff2");
+  } */

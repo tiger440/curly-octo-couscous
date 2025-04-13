@@ -1,0 +1,398 @@
+.bannerTitle {
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 15px;
+        position: relative;
+
+        @media (max-width: 1199px) {
+            font-size: 30px;
+        }
+
+        &::before {
+            content: quote("“");
+            position: absolute;
+            left: -25px;
+        }
+
+        &::after {
+            content: quote("”");
+            position: absolute;
+        }
+
+        br {
+            @media (max-width: 1199px) {
+                display: none;
+            }
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 40px;
+
+        @media (max-width: 1199px) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        br {
+            @media (max-width: 1199px) {
+                display: none;
+            }
+        }
+    }
+
+    button {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        border-radius: 50px;
+        padding: 7px 15px;
+
+        img {
+            margin-left: 8px;
+        }
+    }
+}
+
+.bannerSection {
+    height: 500px;
+    margin-top: 100px;
+    position: relative;
+
+    @media (max-width: 1199px) {
+        height: auto;
+    }
+
+    .bannerImgCard {
+        @media (max-width: 1199px) {
+            order: -1;
+        }
+    }
+
+    .bannerImg {
+        position: absolute;
+        right: 0;
+        top: -155px;
+        background-image: url("../../assets/hero-bg.png");
+
+        background-size: cover;
+        height: calc(100% + 110px);
+        width: 50%;
+
+        img {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            max-height: 440px;
+            transform-origin: bottom right;
+            scale: 1.18;
+            object-fit: contain;
+        }
+
+        @media (max-width: 1199px) {
+            // z-index: 1;
+            // background-image: unset;
+            height: 100%;
+            width: 100%;
+            display: none;
+
+            img {}
+        }
+    }
+
+    .shadowBox {
+        background: linear-gradient(90deg,
+                rgba(255, 255, 255, 0) 0%,
+                #0373ff 100%);
+        height: 24px;
+        position: relative;
+        bottom: -155px;
+
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+}
+
+.enterpriseSection {
+    margin-top: 100px;
+    margin-bottom: 75px;
+    padding-bottom: 80px;
+    position: relative;
+
+    @media (max-width: 1199px) {
+        margin-top: 50px;
+    }
+
+    .enterpriseTitle {
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+
+            @media (max-width: 1199px) {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .enterpriseBtn {
+        text-align: end;
+
+        &>span {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: inline-block;
+
+            @media (max-width: 1199px) {
+                font-size: 25px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 20px;
+
+            @media (max-width: 1199px) {
+                font-size: 18px;
+            }
+
+            br {
+                @media (max-width: 1199px) {
+                    display: none;
+                }
+            }
+        }
+
+        button {
+            border-radius: 50px;
+            font-weight: 500;
+            padding: 7px 15px;
+            margin-left: auto;
+            display: block;
+        }
+    }
+
+    .enterpriseShape {
+        width: 100%;
+        height: 470px;
+        background: linear-gradient(90deg,
+                rgba(242, 89, 41, 0.16) 0%,
+                rgba(3, 115, 255, 0.16) 100%);
+        bottom: 0px;
+        z-index: 0;
+        position: absolute;
+    }
+
+    .enterpriceImageContainer {
+        margin-top: 70px;
+
+        img {
+            position: relative;
+            z-index: 1;
+            border-radius: 15px;
+            width: 100%;
+            box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.developeSection {
+    margin-bottom: 50px;
+
+    .developeTitle {
+        text-align: center;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+
+            @media (max-width: 1199px) {
+                margin-bottom: 15px;
+                font-size: 25px;
+            }
+        }
+
+        .titleText{
+            font-size: 40px;
+        }
+
+        .subtitleText{
+            font-size: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 50px;
+            margin-top: 46px;
+            padding: 7px 15px;
+
+            @media (max-width: 1199px) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .developeImageContainer{
+        margin-block: 70px;
+
+        img {
+            position: relative;
+            border-radius: 15px;
+            width: 100%;
+            box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.footerSection {
+    background: linear-gradient(87.75deg,
+            rgba(3, 115, 255, 0.16) 0%,
+            rgba(255, 255, 255, 0.16) 100%);
+    padding-top: 75px;
+
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+    }
+
+    .footerCard {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            height: 100px;
+            text-align: center;
+
+            @media (max-width: 1199px) {
+                height: 50px;
+            }
+        }
+
+        button {
+            border: 1px solid #023a80;
+            border-radius: 50px;
+            padding: 7px 15px;
+            font-size: 12px;
+            margin-top: 40px;
+            width: fit-content;
+            margin-inline: auto;
+        }
+    }
+
+    .footerBottomBar {
+        padding: 33px 0px;
+        margin-top: 75px;
+
+        @media (max-width: 1199px) {
+            margin-top: 50px;
+        }
+
+        .footerDetail {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 1199px) {
+                flex-wrap: wrap;
+            }
+
+            button {
+                padding: 7px 15px;
+                border-radius: 50px;
+                min-width: 130px;
+                font-weight: 500;
+
+                &:first-child {
+                    border: 1px solid #fff;
+                    background-color: transparent;
+                    margin-left: 30px;
+                    margin-right: 15px;
+
+                    @media (max-width: 1199px) {
+                        margin-left: 0px;
+                    }
+                }
+
+                img {
+                    margin-left: 10px;
+                }
+            }
+
+            a {
+                text-decoration: unset;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .footerLink {
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 1199px) {
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    margin-top: 15px;
+                }
+
+                .callDetail {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    margin-right: 50px;
+
+                    a {
+                        font-weight: 400;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+
+                .footerMenu {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+
+    .legalNoticeCard {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+
+        p {
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 300;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
